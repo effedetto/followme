@@ -7,7 +7,17 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+ window.Vue = require('vue');
+ import * as VueGoogleMaps from 'vue2-google-maps';
+ window.Vue.use(VueGoogleMaps); 
+
+import {load} from 'vue2-google-maps'
+	load({
+
+		key:'AIzaSyBBw6gI9OsEVRBcyBeSEsXXaGU2c5GFW8Q',
+		v:'3.30',
+		libraries:'places',
+	});
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -15,7 +25,8 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('mappa', require('./components/Mappa.vue'));
+
 
 const app = new Vue({
     el: '#app'
