@@ -1,30 +1,4 @@
-@extends('layouts.odometerLayout')
-@section('odometer')
-<style>
-	.textroller{
-		font-size:40px;
-		line-height: 60px; 
-	}
-</style>
  
-  
-<p align="center">
-<div id="roller" class="textroller">bag</div>
-</p>
-<script>
-	var elt = document.getElementById("roller");
-	var texts =['follow','me'];
-	elt.textroller = new TextRoller({
-
-		el:elt,
-		values: texts,
-		theme:'plaza',
-		align:"middle",
-		delay:1000,
-		loop:false
-	});
-</script>
-@endsection
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
