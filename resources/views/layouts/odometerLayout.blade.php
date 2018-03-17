@@ -8,10 +8,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <title>TextRoller — Transition numbers with ease</title>
+        <title>FollowMe- For Uman Cities</title>
        
          <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        
+        <!-- https://github.com/lambda2/text-roller/blob/master/test/performance.html-->
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   
         <link rel="stylesheet" href="{{ URL::asset('/css/odometer-theme-minimal.css') }}" />
         <link rel="stylesheet" href="{{ URL::asset('/css/odometer-theme-default.css') }}" />

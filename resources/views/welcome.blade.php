@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Follow ME </title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -77,11 +77,56 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+            
+                <div class="container">
+                    {{-- <div class="title m-b-md">
+                         Follow Me </br>
+                        For Uman Cities
+                    </div> --}}
+                    @extends('layouts.odometerLayout')
+                @section('odometer')
+                <style>
+                    .textroller{
+                        font-size:140px;
+                        line-height: 60px; 
+                    }
+
+                    .odometer-container{
+                        margin:5px;
+                        width: 150px;
+                        display: inline-block;
+                    }
+                    
+                </style>
+                 
+                <div class="content">
+                      <div class="title m-b-md">
+                          Follow Me <br/>
+                          For Uman Cities
+                      </div>
+                </div>
+                <div class="odometer-container">
+                <div id="roller" class="textroller">bag</div>
+                </div>
+                 
+                <script>
+                    var elt = document.getElementById("roller");
+                    var texts =['follow','me'];
+                    elt.textroller = new TextRoller({
+
+                        el:elt,
+                        values: texts,
+                        theme:'plaza',
+                        align:"middle",
+                        delay:1000,
+                        loop:true
+                    });
+                </script>
+                @endsection
                 </div>
 
+            {{-- 
+                
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
@@ -89,7 +134,7 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </body>
 </html>
