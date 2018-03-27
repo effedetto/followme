@@ -63,6 +63,7 @@
                 margin-bottom: 30px;
             }
         </style>
+        
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -92,8 +93,9 @@
                     }
 
                     .odometer-container{
-                        margin:5px;
+                        margin:50px;
                         width: 150px;
+                        height: 150px ; 
                         display: inline-block;
                     }
                     

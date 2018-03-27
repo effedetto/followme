@@ -12,6 +12,26 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    
+      {{--   <!-- Scripts -->
+
+       <script src="//js.pusher.com/3.0/pusher.min.js"></script>
+       <script>
+       Pusher.log = function(msg) {
+        console.log(msg);
+       };
+
+       var pusher = new Pusher("{{env("PUSHER_KEY")}}", {
+
+            cluster:'eu'
+       });
+       var channel = pusher.subscribe('test-channel');
+       channel.bind('test-event', function(data) {
+          alert(data.text);
+         console.log(data.text);
+       });
+       </script> --}}
 </head>
 <body>
     <div id="app">
