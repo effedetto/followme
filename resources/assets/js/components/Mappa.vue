@@ -5,7 +5,7 @@
                @place_changed="setPlace">
         </gmap-autocomplete>
              <button @click="usePlace">Add</button>
-        <Gmap-Map style="width: 600px; height: 300px;" :zoom="1" :center="{lat: 0, lng: 0}">
+        <Gmap-Map style="width: 570px; height: 270px;" :zoom="6" :center="{lat: 41.1171432, lng: 16.871871499999997}">
           <Gmap-Marker v-for="(marker, index) in markers"
             :key="index"
             :position="marker.position"

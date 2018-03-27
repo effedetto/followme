@@ -43734,8 +43734,11 @@ var render = function() {
       _c(
         "Gmap-Map",
         {
-          staticStyle: { width: "600px", height: "300px" },
-          attrs: { zoom: 1, center: { lat: 0, lng: 0 } }
+          staticStyle: { width: "570px", height: "270px" },
+          attrs: {
+            zoom: 6,
+            center: { lat: 41.1171432, lng: 16.871871499999997 }
+          }
         },
         [
           _vm._l(_vm.markers, function(marker, index) {
