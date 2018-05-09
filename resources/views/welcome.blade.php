@@ -47,6 +47,8 @@
 
             .title {
                 font-size: 84px;
+                text-align: center;
+
             }
 
             .links > a {
@@ -80,10 +82,10 @@
 
             
                 <div class="container">
-                    {{-- <div class="title m-b-md">
-                         Follow Me </br>
+                    <div class="title">
+                         Follow Me <br>
                         For Uman Cities
-                    </div> --}}
+                    </div>
                     @extends('layouts.odometerLayout')
                 @section('odometer')
                 <style>
@@ -101,12 +103,12 @@
                     
                 </style>
                  
-                <div class="content">
+               {{--  <div class="content">
                       <div class="title m-b-md">
                           Follow Me <br/>
                           For Uman Cities
                       </div>
-                </div>
+                </div> --}}
                 <div class="odometer-container">
                 <div id="roller" class="textroller">bag</div>
                 </div>
