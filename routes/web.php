@@ -19,7 +19,14 @@ use Illuminate\Support\Facades\App;
 
 //     return view('welcome');
 // });
+
+
+
+
+
+
 Auth::routes();
+
 Route::get('/', function () {
     return view('welcome');
 });

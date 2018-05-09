@@ -100,7 +100,7 @@
                         &nbsp;
                     </ul>
 
-                    <!-- Right Side Of Navbar -->
+                    <!-- Parte destra del Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @guest
@@ -131,8 +131,13 @@
                 </div>
             </div>
         </nav>
+        <div class="containter">
+            <div class="row">
+                 @yield('content')
+            </div>
+        </div>
+       
 
-        @yield('content')
     </div>
 
     <!-- Scripts -->
